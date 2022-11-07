@@ -8,3 +8,7 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
+Vue.directive('bgc', function (el, binding) {
+  el.style.backgroundColor = binding.value
+})
